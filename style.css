@@ -19,18 +19,25 @@ img {
 }
 
 .carousel-button {
+  cursor: pointer;
     background: transparent;
-    border: 2px red solid;
+    color:white;
+    border: 2px white solid;
+    border-radius: 100vh;
     font-weight: 900;
     width: 50px;
     height: 50px;
+    margin: 30px;
 }
 
+.carousel-button:hover {
+  background: orange;
+}
 
 .carousel-actions {
   display: flex;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 45%;
   justify-content: space-between;
 }
