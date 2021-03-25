@@ -1,4 +1,9 @@
+img {
+  max-width: 100%;
+}
+
 .carousel {
+    margin: 0 auto;
     max-width: 600px;
     position: relative;
 }
@@ -15,11 +20,17 @@
 
 .carousel-button {
     background: transparent;
-    border: none;
+    border: 2px red solid;
     font-weight: 900;
+    width: 50px;
+    height: 50px;
 }
 
 
 .carousel-actions {
-
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  justify-content: space-between;
 }
