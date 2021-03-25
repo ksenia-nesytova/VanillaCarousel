@@ -4,16 +4,21 @@
 }
 
 .carousel-item {
-    visibility: hidden;
+    display: none;
     max-width: 100%;
 }
 
 .carousel-item-visible {
-    visibility: visible;
+    display: block;
 }
 
 .carousel-button {
     background: transparent;
     border: none;
     font-weight: 900;
+}
+
+
+.carousel-actions {
+
 }
