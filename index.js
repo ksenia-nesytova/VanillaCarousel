@@ -21,12 +21,13 @@ autoCarousel();
 
 // Auto slideshow
 function autoCarousel() {
-  for(let i = 0; i < totalSlides; i++) {
-    slides[i].classList.add("carousel-item-hidden");
-  }
+  // for(let i = 0; i < totalSlides; i++) {
+  //   slides[i].classList.add("carousel-item-hidden");
+    hideAllSlides();
+
+
+  slides[slidePosition].classList.add("carousel-item-visible");
   slidePosition++;
-  if(slidePosition > totalSlides) {slidePosition = 1}
-  slides[slidePosition-1].classList.add("carousel-item-visible");
   setTimeout(autoCarousel, 2000);
 }
 
