@@ -9,13 +9,16 @@ img {
 }
 
 .carousel-item {
-    display: none;
     height: auto;
     max-width: 100%;
 }
 
 .carousel-item-visible {
     display: block;
+}
+
+.caousel-item-hidden {
+    display: none;
 }
 
 .carousel-button {
