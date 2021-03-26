@@ -19,16 +19,17 @@ function hideAllSlides() {
 
 autoCarousel();
 
-// Auto slideshow
+// AUTO SLIDESHOW
 function autoCarousel() {
-  // for(let i = 0; i < totalSlides; i++) {
-  //   slides[i].classList.add("carousel-item-hidden");
-    hideAllSlides();
-
-
-  slides[slidePosition].classList.add("carousel-item-visible");
-  slidePosition++;
-  setTimeout(autoCarousel, 2000);
+    nextSlide()
+    // hideAllSlides();
+    //
+    // if(slidePosition === (totalSlides-1)) {
+    //  slidePosition = 0;} else {
+    //    slidePosition++;
+    //  }
+    // slides[slidePosition].classList.add("carousel-item-visible");
+    setTimeout(autoCarousel, 2000);
 }
 
 
