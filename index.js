@@ -12,7 +12,7 @@ const buttonNext = document.getElementById("carousel-button-next");
 
 function hideAllSlides() {
     for(slide of slides) {
-        slide.classList.add("carousel-item-visible")
+        slide.classList.remove("carousel-item-visible")
         slide.classList.add("carousel-item-hidden")
     }
 }
