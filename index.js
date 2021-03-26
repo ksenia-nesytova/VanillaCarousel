@@ -20,6 +20,11 @@ function nextSlide() {
 }
 
 function prevSlide() {
+    if(slidePosition === (totalSlides-1)) {
+     slidePosition = 0;
+  } else {
+     slidePosition--;
+  }
    slides[slidePosition].classList.remove("carousel-item-visible");
 }
 
