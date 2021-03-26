@@ -20,6 +20,7 @@ img {
 
 .carousel-item-visible {
     display: block;
+    animation: slideFadeVisibility 0.9s;
 }
 
 .carousel-button {
@@ -53,4 +54,4 @@ img {
     100% {
         opacity:100%;
     }
-}
+};
