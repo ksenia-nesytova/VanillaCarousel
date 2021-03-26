@@ -20,6 +20,7 @@ function hideAllSlides() {
 // functions to switch slides
 function nextSlide() {
     hideAllSlides();
+
     if(slidePosition === (totalSlides-1)) {
      slidePosition = 0;
   } else {
@@ -30,10 +31,11 @@ function nextSlide() {
 
 function prevSlide() {
   hideAllSlides();
-    if(slidePosition === (totalSlides-1)) {
-     slidePosition = 0;
+
+    if(slidePosition === 0) {
+     slidePosition = totalSlides-1;
   } else {
-     slidePosition++;
+     slidePosition--;
   }
    slides[slidePosition].classList.add("carousel-item-visible");
 }
