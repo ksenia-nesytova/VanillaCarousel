@@ -45,3 +45,12 @@ img {
   justify-content: space-between;
   transform: translateY(-50%);
 }
+
+@keyframes slideFadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity:100%;
+    }
+}
