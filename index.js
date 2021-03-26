@@ -6,12 +6,13 @@ let slidePosition = 0;
 
 
 // buttons
-let buttonPrev = document.getElementById("carousel-button-prev");
-let buttonNext = document.getElementById("carousel-button-next");
+const buttonPrev = document.getElementById("carousel-button-prev");
+const buttonNext = document.getElementById("carousel-button-next");
 
 
 function hideAllSlides() {
     for(slide of slides) {
+        slide.classList.add("carousel-item-visible")
         slide.classList.add("carousel-item-hidden")
     }
 }
