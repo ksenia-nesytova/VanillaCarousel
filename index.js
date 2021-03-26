@@ -33,7 +33,7 @@ function prevSlide() {
     if(slidePosition === (totalSlides-1)) {
      slidePosition = 0;
   } else {
-     slidePosition--;
+     slidePosition++;
   }
    slides[slidePosition].classList.add("carousel-item-visible");
 }
