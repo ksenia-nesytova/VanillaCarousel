@@ -16,7 +16,7 @@ function nextSlide() {
   } else {
      slidePosition++;
   }
-   slides[slidePosition].className += "carousel-item-visible";
+   slides[slidePosition].classList.add("carousel-item-visible");
 }
 
 function prevSlide() {
