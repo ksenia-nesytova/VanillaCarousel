@@ -13,12 +13,12 @@ img {
     max-width: 100%;
 }
 
-.carousel-item-visible {
-    display: block;
+.carousel-item-hidden {
+    display: none;
 }
 
-.caousel-item-hidden {
-    display: none;
+.carousel-item-visible {
+    display: block;
 }
 
 .carousel-button {
