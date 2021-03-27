@@ -2,6 +2,7 @@ img {
   max-width: 100%;
 }
 
+/* CAROUSEL */
 .carousel {
     margin: 0 auto;
     max-width: 600px;
@@ -14,15 +15,16 @@ img {
     max-width: 100%;
 }
 
-.carousel-item-hidden {
+.carousel-item--hidden {
     display: none;
 }
 
-.carousel-item-visible {
+.carousel-item--visible {
     display: block;
     animation: slideFadeVisibility 0.9s;
 }
 
+/* CAROUSEL BUTTONS */
 .carousel-button {
   cursor: pointer;
     background: white;
@@ -46,6 +48,24 @@ img {
   justify-content: space-between;
   transform: translateY(-50%);
 }
+
+/* DOTS */
+.dots {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  border: 2px red solid;
+  border-radius: 100vh;
+  background: red;
+  }
+
+.dot + .dot {
+  margin-left: 10px;
+}
+
+
 
 @keyframes slideFadeVisibility {
     0% {
