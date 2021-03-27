@@ -6,7 +6,7 @@ let slidePosition = 0;
 
 
 let dots = document.getElementsByClassName("dots");
-
+let singleDots = document.getElementsByClassName("dot")
 // AUTOGENERATING DOTS FOR EACH SLIDE
 function generateDots() {
   for(slide of slides) {
@@ -21,13 +21,13 @@ generateDots();
 
 // dot.classList.add("dot--active"_
 
-//  function manualSwitch() {
-//    for(dot of dots) {
-//     dots.addEventListener("click", console.log("click"))
-//   }
-// }
+ function manualSwitch() {
+   for(dot of singleDots) {
+    dot.addEventListener("click", function(){ dot.classList.add("dot--active")})
+  }
+}
 
-// manualSwitch();
+manualSwitch();
 // carouselItem[slidePosition].classList.add("carousel-item--visible")
 
 
@@ -60,7 +60,7 @@ function autoCarousel() {
 }
 
 
-// functions to switch slides
+// functions to manually switch slides
 function nextSlide() {
     hideAllSlides();
 
