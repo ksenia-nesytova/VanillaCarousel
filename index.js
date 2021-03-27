@@ -5,19 +5,17 @@ let totalSlides = slides.length;
 let slidePosition = 0;
 
 
-const dots = document.getElementsByClassName("dots");
+let dots = document.getElementsByClassName("dots");
 
-
+// AUTOGENERATING DOTS FOR EACH SLIDE
 function generateDots() {
   for(slide of slides) {
     let dot = document.createElement("span");
     dot.className = "dot";
 
-    document.body.appendChild(dot);
+    dots[0].appendChild(dot);
   }
 }
-//
-// while ()
 
 generateDots();
 
