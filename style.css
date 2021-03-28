@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 img {
   max-width: 100%;
 }
@@ -47,6 +50,13 @@ img {
   top: 45%;
   justify-content: space-between;
   transform: translateY(-50%);
+}
+
+.slide-caption {
+  display: inline-block;
+  background: white;
+  padding: 5px 20px;
+  transform: translateY(-150%);
 }
 
 /* DOTS */
