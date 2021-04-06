@@ -1,23 +1,26 @@
 // slides
 const slides = document.getElementsByClassName("carousel-item");
-let totalSlides = slides.length;
+const totalSlides = slides.length;
 
 let slidePosition = 0;
 
 
-let dots = document.getElementsByClassName("dots");
-let singleDots = document.getElementsByClassName("dot")
+const dots = document.getElementsByClassName("dots");
+const singleDots = document.getElementsByClassName("dot");
 
 
 // AUTOGENERATING DOTS FOR EACH SLIDE
 function generateDots() {
-  for(slide of slides) {
-    let dot = document.createElement("span");
-    dot.className = "dot";
 
-    dots[0].appendChild(dot);
+    for(let i = 0; i <totalSlides; i++) {
+      let dot = document.createElement("span");
+      dot.className = "dot";
+      dots[0].appendChild(dot);
+        dot.id = i;
+    }
   }
-}
+
+
 
 generateDots();
 
@@ -28,14 +31,17 @@ function clearActiveDots() {
   }
 }
 
- function manualSwitch() {
-   clearActiveDots();
-   for(dot of singleDots) {
-    dot.addEventListener("click", function(){ dot.classList.add("dot--active")})
-  }
-}
 
-manualSwitch();
+
+ // function manualSwitch() {
+ //   clearActiveDots();
+ //   if (true) {
+ //
+ //   }
+ //  }
+
+
+// manualSwitch();
 // carouselItem[slidePosition].classList.add("carousel-item--visible")
 
 
