@@ -12,15 +12,13 @@ const singleDots = document.getElementsByClassName("dot");
 // AUTOGENERATING DOTS FOR EACH SLIDE
 function generateDots() {
 
-    for(let i = 0; i <totalSlides; i++) {
+    for(let i = 0; i < totalSlides; i++) {
       let dot = document.createElement("span");
       dot.className = "dot";
       dots[0].appendChild(dot);
         dot.id = i;
     }
   }
-
-
 
 generateDots();
 
@@ -31,18 +29,19 @@ function clearActiveDots() {
   }
 }
 
+function changeActiveDot() {
+  clearActiveDots();
+  let currentDot = document.getElementById(slidePosition);
+  currentDot.classList.add("dot--active");
+}
 
-
- // function manualSwitch() {
- //   clearActiveDots();
- //   if (true) {
- //
- //   }
- //  }
-
-
+//  function manualSwitch() {
+//    clearActiveDots();
+//
+//   }
+//
+//
 // manualSwitch();
-// carouselItem[slidePosition].classList.add("carousel-item--visible")
 
 
 // buttons
@@ -61,7 +60,7 @@ function hideAllSlides() {
 // buttons to manually switch slides
 function nextSlide() {
     hideAllSlides();
-
+    changeActiveDot()
     if(slidePosition === (totalSlides-1)) {
      slidePosition = 0;
   } else {
@@ -71,7 +70,8 @@ function nextSlide() {
 }
 
 function prevSlide() {
-  hideAllSlides();
+    hideAllSlides();
+    changeActiveDot()
 
     if(slidePosition === 0) {
      slidePosition = totalSlides-1;
@@ -83,6 +83,7 @@ function prevSlide() {
 
 // AUTO SLIDESHOW
 function autoCarousel() {
+    changeActiveDot()
     nextSlide()
     // hideAllSlides();
     //
