@@ -11,12 +11,11 @@ const singleDots = document.getElementsByClassName("dot");
 
 // AUTOGENERATING DOTS FOR EACH SLIDE
 function generateDots() {
-
     for(let i = 0; i < totalSlides; i++) {
       let dot = document.createElement("span");
       dot.className = "dot";
       dots[0].appendChild(dot);
-        dot.id = i;
+      dot.id = i;
     }
   }
 
@@ -31,17 +30,28 @@ function clearActiveDots() {
 
 function changeActiveDot() {
   clearActiveDots();
-  let currentDot = document.getElementById(slidePosition);
-  currentDot.classList.add("dot--active");
+  let activeDot = document.getElementById(slidePosition);
+  activeDot.classList.add("dot--active");
 }
 
-//  function manualSwitch() {
-//    clearActiveDots();
+// 
+// function manualSwitch() {
+//   for(let i = 0; i <= singleDots.length; i++) {
+//     let chosenDot = dots.querySelectorAll("#" + i);
+//     chosenDot.addEventListener("click", pickSlide())
 //
 //   }
+// }
+
+
+// function pickSlide() {
+//   if(chosenDot !== slidePosition) {
+//   slidePosition = chosenDot;
+//   }
+// }
 //
-//
-// manualSwitch();
+
+manualSwitch();
 
 
 // buttons
