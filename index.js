@@ -34,24 +34,24 @@ function changeActiveDot() {
   activeDot.classList.add("dot--active");
 }
 
-// 
-// function manualSwitch() {
-//   for(let i = 0; i <= singleDots.length; i++) {
-//     let chosenDot = dots.querySelectorAll("#" + i);
-//     chosenDot.addEventListener("click", pickSlide())
 //
-//   }
+// function manualSwitch(i) {
+//   // for(let i = 0; i <= singleDots.length; i++) {
+//   //   let chosenDot = dots.querySelectorAll("#" + i);
+//   // }
+//   slidePosition = i;
 // }
-
-
-// function pickSlide() {
-//   if(chosenDot !== slidePosition) {
-//   slidePosition = chosenDot;
-//   }
-// }
+// Array.from(dots).forEach(dot => dot.addEventListener("click", manualSwitch()))
 //
-
-manualSwitch();
+//
+// // function pickSlide() {
+// //   if(chosenDot !== slidePosition) {
+// //
+// //   }
+// // }
+// //
+// //
+// // manualSwitch();
 
 
 // buttons
@@ -102,7 +102,7 @@ function autoCarousel() {
     //    slidePosition++;
     //  }
     // slides[slidePosition].classList.add("carousel-item-visible");
-    setTimeout(autoCarousel, 2000);
+    setTimeout(autoCarousel, 3000);
 }
 
 
