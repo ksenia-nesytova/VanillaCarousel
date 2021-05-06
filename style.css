@@ -5,10 +5,18 @@ img {
   max-width: 100%;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* CAROUSEL */
 .carousel {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 80%;
     position: relative;
 }
 
